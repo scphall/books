@@ -1,0 +1,158 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{fancybox}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{pstricks}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{charter}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[lmargin=1.7cm, rmargin=1.7cm, tmargin=2cm, bmargin=1.1cm]{geometry}
+
+\makeatletter
+\def\hlinewd#1{%
+  \noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+\title{Books}
+\author{Sam Hall}
+\date{\today}
+\headsep=0.2cm
+
+\newcounter{bn}
+\newcommand{\bn}{\stepcounter{bn}\arabic{bn}}
+
+\newcommand{\jan}{\sc Jan}
+\newcommand{\feb}{\sc Feb}
+\newcommand{\mar}{\sc Mar}
+\newcommand{\apr}{\sc Apr}
+\newcommand{\may}{\sc May}
+\newcommand{\jun}{\sc June}
+\newcommand{\jul}{\sc July}
+\newcommand{\aug}{\sc Aug}
+\newcommand{\sep}{\sc Sept}
+\newcommand{\oct}{\sc Oct}
+\newcommand{\nov}{\sc Nov}
+\newcommand{\dec}{\sc Dec}
+
+\renewcommand{\labelitemi}{$\circ$}
+\newenvironment{bullets}
+{\begin{itemize}
+ \setlength{\itemsep}{0pt}
+ \setlength{\parskip}{0pt}
+ \setlength{\parsep}{0pt}}
+{\end{itemize}}
+
+% Change section headers
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}
+                                   {-0.1cm \@plus -1ex \@minus -.2ex}
+                                   {0.05cm \@plus.2ex}
+                                   {\Large}}
+\makeatother
+
+% Create Header
+\pagestyle{fancy}
+\fancyhead{}
+%\fancyhead[RO,RE]{}
+%\fancyhead[LO,LE]{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{.mm}
+\renewcommand{\arraystretch}{1.3}
+
+% Figure and Table in columns...
+\makeatletter
+\newenvironment{figurehere}
+ {\def\@captype{figure}}
+ {}
+\newenvironment{tablehere}
+ {\def\@captype{table}}
+ {}
+\makeatother
+
+
+\begin{document}
+
+\input{books}
+
+\clearpage
+
+%\section*{Other books}
+%\begin{center}
+  %\begin{tablehere}
+    %\begin{tabular}{l l}
+      %\hlinewd{1.5pt}
+      %\sc Title       & \sc Author    \\
+      %\hlinewd{1pt}
+      %Tales of Redwall (Series)    & Brian Jaques            \\
+      %Sharpe (Series)              & Bernard Cornwell        \\
+      %Swallows and Amazons         & Arthur Ransome          \\
+      %Dirk Gently's Holistic Detective Agency & Douglas Adams \\
+      %The Hitchhikers Guide to the Galaxy & Douglas Adams    \\
+      %Restaurant at the End of The Universe & Douglas Adams  \\
+      %Life, The Universe and Everything & Douglas Adams      \\
+      %So Long and Thanks for All the Fish & Douglas Adams    \\
+      %Mostly Harmless              & Douglas Adams           \\
+      %The Salmon of Doubt          & Douglas Adams           \\
+      %The Fellowship of the Ring   & J.R.R. Tolkein          \\
+      %Sh\"ogun                     & James Clavell           \\
+      %Tai-Pan                      & James Clavell           \\
+      %Catch-22                     & Joseph Heller           \\
+      %The Day of the Jackal        & Frederick Forsyth       \\
+      %A Clockwork Orange           & Anthony Burgess         \\
+      %The Tao of Pooh              & Benjamin Hoff           \\
+      %\hlinewd{1.5pt}
+    %\end{tabular}
+  %\end{tablehere}
+%\end{center}
+%
+%
+%\section*{Books I Will Read}
+%\begin{center}
+  %\begin{tablehere}
+    %\begin{tabular}{l l}
+      %\hlinewd{1.5pt}
+      %\sc Title       & \sc Author    \\
+      %\hlinewd{1pt}
+                                 %& Robert Sawyer      \\
+                                 %& Ian M.~Banks       \\
+      %Birdsong                   & Sebastian Faulks   \\
+      %Canterbury Tales           & Geoffrey Chaucer   \\
+      %Don Quixote                & Cervantes          \\
+      %Gone With the Wind         & Margaret Mitchell  \\
+      %Gormenghast Trilogy        & Mervyn Peake       \\
+      %In Search of Lost Time     & Marcel Proust      \\
+      %Mort                       & Terry Pratchett    \\
+      %Pickwick Papers            & Charles Dickens    \\
+      %The Call of the Wild       & Jack London        \\
+      %The Color Purple           & Alice Walker       \\
+      %The Count of Monte Cristo  & Dumas              \\
+      %The Crying of Lot 49       & Thomas Pynchon     \\
+      %The English Patient        & Michael Oondatje   \\
+      %The God of Small Things    & Arundhati Roy      \\
+      %The Humpty-Dumpty Story    & Jasper Fforde      \\
+      %The Illiad                 & Homer              \\
+      %The Odyssey                & Homer              \\
+      %Ulysses                    & James Joyce        \\
+      %Uncle Tom's Cabin          & Harriet Beecher Stowe \\
+      %The Double                 & Dostoevsky         \\
+      %Notes from Underground     & Dostoevsky         \\
+      %Kim                       & Rudyard Kipling         \\
+      %Finnegan's wake           & James Joyce         \\
+      %\hlinewd{1.5pt}
+    %\end{tabular}
+  %\end{tablehere}
+%\end{center}
+
+\end{document}
+
+
+
