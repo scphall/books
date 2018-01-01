@@ -2,7 +2,7 @@
 MAIN = main
 AUXDIR = aux
 
-LATEX = pdflatex
+LATEX = /Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin/pdflatex
 
 FIGEXT = .pdf
 MAINEXT= .pdf

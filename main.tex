@@ -16,6 +16,8 @@
 \usepackage{booktabs}
 \usepackage[lmargin=1.7cm, rmargin=1.7cm, tmargin=2cm, bmargin=1.1cm]{geometry}
 
+\def\littlerule{\midrule[0.01em]}
+
 \makeatletter
 \def\hlinewd#1{%
   \noalign{\ifnum0=`}\fi\hrule \@height #1 %
@@ -30,18 +32,18 @@
 \newcounter{bn}
 \newcommand{\bn}{\stepcounter{bn}\arabic{bn}}
 
-\newcommand{\jan}{\sc Jan}
-\newcommand{\feb}{\sc Feb}
-\newcommand{\mar}{\sc Mar}
-\newcommand{\apr}{\sc Apr}
-\newcommand{\may}{\sc May}
-\newcommand{\jun}{\sc June}
-\newcommand{\jul}{\sc July}
-\newcommand{\aug}{\sc Aug}
-\newcommand{\sep}{\sc Sept}
-\newcommand{\oct}{\sc Oct}
-\newcommand{\nov}{\sc Nov}
-\newcommand{\dec}{\sc Dec}
+\newcommand{\jan}{Jan}
+\newcommand{\feb}{Feb}
+\newcommand{\mar}{Mar}
+\newcommand{\apr}{Apr}
+\newcommand{\may}{May}
+\newcommand{\jun}{June}
+\newcommand{\jul}{July}
+\newcommand{\aug}{Aug}
+\newcommand{\sep}{Sept}
+\newcommand{\oct}{Oct}
+\newcommand{\nov}{Nov}
+\newcommand{\dec}{Dec}
 
 \renewcommand{\labelitemi}{$\circ$}
 \newenvironment{bullets}
